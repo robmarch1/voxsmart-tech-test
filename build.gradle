@@ -1,11 +1,13 @@
-plugins {
-    id 'java'
+apply plugin: 'java'
+apply plugin: 'idea'
+
+compileJava {
+    sourceCompatibility = 17
+    targetCompatibility = 17
 }
 
-group 'org.example'
-version '1.0-SNAPSHOT'
-
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
